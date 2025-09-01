@@ -1,24 +1,23 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center p-4">
-      <nav>
+    <header className="flex justify-between items-center p-8">
+      <nav className="flex justify-between items-center w-full">
         <Link href="/">
-          <Image src="/logo.svg" alt="logo" width={100} height={100} />
-          <span>SWE-One</span>
+          <span className="text-2xl font-bold">SWE-One</span>
         </Link>
-      </nav>
-      <nav>
-        <Link href="/about">
-          <span>About</span>
-        </Link>
-      </nav>
-      <nav>
-        <Link href="/contact">
-          <span>Contact</span>
-        </Link>
+        <div className="flex justify-center items-center gap-4">
+            <Link href="/">
+                <span>Home</span>
+            </Link>
+            <Link href="/about">
+                <span>About</span>
+            </Link>
+            <Link href="/contact">
+                <span>Contact</span>
+            </Link>
+        </div>
       </nav>
     </header>
   );

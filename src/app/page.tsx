@@ -1,9 +1,7 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div>
-      <h1>SWE-One</h1>
+    <div className="flex justify-center items-center h-[calc(100vh-100px)]">
+      <h1>This is Software Engineering One</h1>
     </div>
   );
 }
